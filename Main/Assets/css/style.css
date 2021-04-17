@@ -1,10 +1,16 @@
 body {
   background: #838383;
-  background-image: repeating-linear-gradient(#838383, #ad9d9d);
+  background-image: linear-gradient(#838383, #ad9d9d);
   margin: 0px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
   overflow-x: hidden;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
 }
 #header-container {
   margin: 0px 25px 0px 25px;
@@ -20,11 +26,13 @@ body {
   font-weight: 400;
   font-size: 100%;
   color: #132A13;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 #header-container #navigation a {
   color: #003459;
   text-decoration: none;
   margin-left: 45px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .horizontal-ruler {
   background-color: #6D2E46;
@@ -52,6 +60,32 @@ body {
 #info-container {
   margin: 1% 1% 1% 1%;
   display: flex;
-  flex-flow: wrap column;
+  flex-flow: wrap row;
   justify-content: space-between;
+}
+#about-me p{
+  border:2px ridge #230C33;
+  text-indent: 1em;
+  padding: 1em 1em 1em 2em;
+}
+#work div{
+  margin: 2em 2em 2em 4.25em;
+}
+div.work-boxes {
+  background-color: #592E83;
+  width: 16em;
+  height: 8em;
+  border: 2px ridge #000;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 4em;
+}
+.work-boxes:hover {
+  box-shadow: 0 5px 9px 0 #333, 0 7px 21px 0 #444;
+}
+#anchor-div {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
 }
